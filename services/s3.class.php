@@ -1381,7 +1381,7 @@ class AmazonS3 extends CFRuntime
 			$opt['headers']['Content-Type'] = $opt['contentType'];
 			unset($opt['contentType']);
 		}
-		else if(isset($opt['filleUpload'])
+		else if(isset($opt['filleUpload']))
 		{
 			$opt['headers']['Content-Type'] = CFMimeTypes::get_mimetype(pathinfo($filename, PATHINFO_EXTENSION));
 		}
